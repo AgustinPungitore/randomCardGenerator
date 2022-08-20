@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>randomCardGenerator</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
@@ -13,22 +13,25 @@
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
   <body>
-    <div class="card">
-      <div class="card-header">
-        Encabezado
+    <div class="table">
+      <div class="my-card">
+        <div class="header-card">
+          <span class="palo"></span>
+        </div>
+        <div class="center-card">
+          <span class="numero"></span>
+        </div>
+        <div class="footer-card">
+          <span class="palo"></span>
+        </div>
       </div>
-      <div class="card-body">
-        Cuerpo
-      </div>
-      <div class="card-footer">
-        Footer
-      </div>
+      <button
+        onclick="window.onload()"
+        type="button"
+        class="btn btn-outline-danger m-4"
+      >
+        Try your luck!
+      </button>
     </div>
-    <!-- JavaScript Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>

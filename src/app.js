@@ -4,16 +4,24 @@ import "./style.css";
 
 import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
+import { read } from "@popperjs/core";
 
-let cards = [2, 3, 4, 5, 6, 7, 8, 9, 10, "J", "K", "Q", "A"];
-let palos = ["♦", "♥", "♠", "♣"];
+let numeros = [2, 3, 4, 5, 6, 7, 8, 9, 10, "J", "K", "Q", "A"];
 
-window.onload = function() {
-  //write your code here
-  let random1 = Math.floor(Math.random() * cards.length);
-  let random2 = Math.floor(Math.random() * palos.length);
+let numero = numeros[Math.floor(Math.random() * (13 - 0) + 0)];
 
-  document.write(cards[random1] + " " + palos[random2]);
-};
+var palos = [
+  { s: "♦", color: "red" },
+  { s: "♥", color: "red" },
+  { s: "♠", color: "black" },
+  { s: "♣", color: "black" }
+];
+let palo = palos[Math.floor(Math.random() * (4 - 0) + 0)];
 
-document.querySelector();
+document.querySelectorAll(".palo").forEach((elem, index) => {
+  elem.innerHTML = palo.s;
+  elem.style.color = palo.color;
+});
+
+document.querySelector(".numero").innerHTML = numero;
+document.querySelector(".numero").style.color = palo.color;
